@@ -91,7 +91,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         if (!mounted) {
           return;
         }
-        Navigator.pushReplacementNamed(context, LoginScreen.routName);
+        Navigator.pushReplacementNamed(context, BottomBarScreen.routeName);
       } on FirebaseAuthException catch (error) {
         await CustomAlertDialoge.showErrorORWarningDialog(
           context: context,
